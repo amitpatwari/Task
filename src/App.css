@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: grey;
+}
+
+aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-style: groove;
+}
+
+.profile {
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 0.75rem 0 0;
+}
+
+.contact-boxes {
+    overflow-y: hidden;
+    /* flex: 1; */
+}
+
+.contact-box {
+    background: #fff;
+
+    padding: 0.75rem 0.75rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact-box:hover,
+.contact-box.active {
+    background: #ebebeb;
+}
+
+main header,
+aside header {
+    background: #000000;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main header {
+    justify-content: flex-start;
+    padding: 0 1rem;
+}
+
+.time-mark {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+}
+
+.text {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+}
+
+.profile-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.profile-component {
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    width: 100%;
+}
+
+.contact-box-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.icon-small {
+    width: 0.85rem;
+    margin: 0 0.25rem;
+}
+
+.last-msg {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-input-box {
+    display: flex;
+    height: 3.5rem;
+    margin-top: 510px;
+    align-items: center;
+    background: #f0f0f0;
+    justify-content: space-between;
+}
+
+aside header {
+    padding: 0 0.75rem;
+    border-right: 1px solid #e1e1e1;
+}
+
+.icon {
+    width: 0.75rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.chat-input input {
+    height: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* .emoji-selector {
+    width: 5%;
+    text-align: center;
+} */
+
+.chat-input {
+    width: 90%;
+}
+
+/* .send {
+    width: 5%;
+    text-align: center;
+} */
+
+.message {
+    color: #000;
+    clear: both;
+    line-height: 18px;
+    font-size: 15px;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.message::before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: '';
+    display: block;
+    border: solid;
+    border-width: 0px 16px 16px 0px;
+    border-color: transparent;
+    border-right-color: #fff;
+}
+
+.message.received {
+    background: #fff;
+    border-radius: 0px 5px 5px 5px;
+    float: left;
+}
+
+.message.sent::before {
+    left: auto;
+    right: -28px;
+    border-width: 0px 16px 16px 16px;
+    border-color: transparent;
+    border-left-color: #e1ffc7;
+}
+
+.message.sent {
+    background: #e1ffc7;
+    border-radius: 5px 0px 5px 5px;
+    float: right;
+}
+
+.metadata {
+    float: right;
+    padding: 0 0 0 7px;
+    position: relative;
+    bottom: -4px;
+}
+
+.metadata .date {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 11px;
+    display: inline-block;
+}
+
+.bottom {
+    background-color: #000000;
+}
+
+.texttt {
+    color: #ffffff
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #1E1E1E;
+    overflow: hidden;
+    height: 75px;
+    border-radius: 24px;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.a:hover {
+    background-color: #000000;
+
+}
+
+.useradd {
+    float: right;
+    height: 2.6rem;
+    border-radius: 70%;
+    margin: 0 0.75rem 0 0;
+    background-color: #2778fb;
+}
+
+.pending {
+    margin-left: 300px;
+    background-color: #000000;
+    color: #e1e1e1;
+    border-radius: 150%;
+    height: 1.2rem;
+    font-size: 18px;
+}
+
+.searchicon {
+    margin-left: 200px;
+}
+
+.filter {
+    margin-left: 125px;
+}
+
+.dot {
+    margin-left: 320px;
+    color: #E7E049;
+    font-weight: bolder;
+    border-radius: 150%;
+    font-size: 20px;
+}
